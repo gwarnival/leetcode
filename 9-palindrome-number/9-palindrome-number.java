@@ -10,8 +10,7 @@ class Solution {
         while (x > 0) {
             int reminder = x % 10;
             x /= 10;
-            palindrome *= 10;
-            palindrome += reminder;
+            palindrome = palindrome * 10 + reminder;
         }
         
         return palindrome == origin;
