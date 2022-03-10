@@ -3,8 +3,9 @@ class Solution {
         
         int origin = x;
         int palindrome = 0;
+        int reminder;
         while (x > 0) {
-            int reminder = x % 10;
+            reminder = x % 10;
             x /= 10;
             palindrome = palindrome * 10 + reminder;
         }
