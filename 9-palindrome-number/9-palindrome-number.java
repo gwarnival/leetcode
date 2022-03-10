@@ -1,5 +1,7 @@
 class Solution {
     public boolean isPalindrome(int x) {        
+        
+        
         if (x < 0) {
             return false;
         }
@@ -11,9 +13,7 @@ class Solution {
             palindrome *= 10;
             palindrome += reminder;
         }
-        if (palindrome == origin) {
-            return true;
-        }
-        return false;
+        
+        return palindrome == origin;
     }
 }
